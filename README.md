@@ -1,119 +1,140 @@
 <img width="1943" height="1093" alt="image" src="https://github.com/user-attachments/assets/cc2ff955-17c2-48c7-81c8-479a0f061850" />
 
-# DevPortfolio Template
+# MoffatPortfolio
 
-A modern, minimalist portfolio template built with Astro and Tailwind CSS. Perfect for developers looking to showcase their skills, experience, and projects in a clean, professional way.
+A modern, minimalist portfolio built with **Astro** and **Tailwind CSS** — designed to showcase the professional work, skills, and achievements of **Moffat Gichure Maina**, a passionate software developer and cybersecurity enthusiast from Kenya.
 
-This was completely rebuilt from the ground up from V1. This template was built to be entirely ready to go with a quick config edit (see below) but also provides the ability to easily extend in whatever way you want.
-
-This template also comes with `CLAUDE.md` and `.cursor/rules` files for easy integration with your existing AI workflows.
+This portfolio highlights a variety of projects ranging from AI-powered systems to IoT and blockchain-based applications.  
+It is fully configurable through a single file (`src/config.ts`), making customization seamless and code-friendly.
 
 > **📬 Connect & Share!**  
-> For questions and updates, feel free to reach out on [**X (Twitter)**](https://x.com/rfitzio).  
-> If you've built and published your personal site with this template, I'd love to see it! Send me a DM 🚀
+> For questions, collaborations, or tech talks, reach out via [**Twitter (X)**](https://twitter.com/GichureMoffat) or [**LinkedIn**](https://linkedin.com/in/moffat-maina-230426225).  
+> If you create your own version of this portfolio, share it — I’d love to see it! 🚀
 
-## Preview
+---
 
-To view a live preview of the site, [click here](https://ryanfitzgerald.github.io/devportfolio/).
+## 🌍 Preview
 
-## Built With
+To view the live version of my site, visit:  
+👉 [**https://lecturerkarare.github.io/MoffatPortfolio/**](https://lecturerkarare.github.io/MoffatPortfolio/)
 
-- **[Astro](https://astro.build/)** - Static site generator for modern web apps
-- **[Tailwind CSS v4](https://tailwindcss.com/)** - Utility-first CSS framework
-- **[Tabler Icons](https://tabler.io/icons)** - Free and open source icons
-- **TypeScript** - For type-safe configuration
+---
 
-## Updating the Template
+## 🛠️ Built With
 
-### Configuration
+- **[Astro](https://astro.build/)** – Static site generator for modern web apps  
+- **[Tailwind CSS](https://tailwindcss.com/)** – Utility-first CSS framework  
+- **[Tabler Icons](https://tabler.io/icons)** – Free, open-source icons  
+- **TypeScript** – Type-safe configuration and clean code  
+- **GitHub Pages** – For seamless and free deployment
 
-The template is designed to be easily customizable through the `src/config.ts` file. This single file controls:
+---
 
-- **Personal Information**: Name, title, description
-- **Accent Color**: Primary color theme (changing this will change the accent color site wide)
-- **Social Links**: Email, LinkedIn, Twitter, GitHub (all optional)
-- **About Section**: Personal bio/description
-- **Skills**: List of technical skills
-- **Projects**: Project showcase with descriptions and links
-- **Experience**: Work history with bullet points
-- **Education**: Educational background and achievements
+## ⚙️ Configuration
 
-If skills, projects, experience, or education are removed from the config, those sections will be hidden entirely.
+This portfolio is fully configurable via a single file: `src/config.ts`.
 
-### Example structures
+It controls all the main sections:
 
-Here's what the config data structure looks like for each section:
+- **Personal Information**: Name, title, and description  
+- **Accent Color**: Controls the primary theme color  
+- **Social Links**: Email, LinkedIn, Twitter, GitHub  
+- **About Section**: Personal introduction  
+- **Skills**: Technologies and tools  
+- **Projects**: Portfolio showcase  
+- **Experience**: Work history  
+- **Education**: Academic achievements  
 
-#### Basic Information
+Removing a section automatically hides it from the site.
+
+---
+
+## 🧩 Example Configuration
+
+Here’s the actual configuration used in this portfolio:
+
 ```typescript
-name: "Your Name",
-title: "Your Job Title",
-description: "Brief site description",
-accentColor: "#1d4ed8", // Hex color for theme
-```
+export const siteConfig = {
+  name: "Moffat Gichure Maina",
+  title: "Software Developer | Cybersecurity Enthusiast",
+  description:
+    "Innovative web and mobile developer skilled in full-stack engineering, cloud technologies, and cybersecurity. Passionate about building secure and scalable software solutions.",
+  accentColor: "#1d4ed8",
+  social: {
+    email: "moffatgichuremaina@gmail.com",
+    linkedin: "https://linkedin.com/in/moffat-maina-230426225",
+    twitter: "https://twitter.com/GichureMoffat",
+    github: "https://github.com/lecturerkarare",
+  },
+  aboutMe:
+    "I'm a self-driven software developer from Kenya with experience in designing and developing mobile and web applications that address real-world challenges. I’m passionate about cybersecurity and recently earned the Hackviser Certified Web Pentester certification. I value teamwork, continuous learning, and knowledge sharing as tools for both personal and professional growth.",
+  skills: [
+    "JavaScript", "React", "Node.js", "Python", "Django", "Flask", "MySQL",
+    "SQLite", "HTML", "CSS", "Android", "TensorFlow", "Docker", "Cybersecurity", "Git"
+  ],
+  projects: [
+    {
+      name: "Kijabe",
+      description:
+        "Java-based application built to streamline organizational data management with modular backend entities. Developed using JDL Studio for schema design.",
+      link: "https://github.com/lecturerkarare/kijabe",
+      skills: ["Java", "Spring", "JDL Studio"],
+    },
+    {
+      name: "DeepLearning - COVID & Pneumonia Detection",
+      description:
+        "A convolutional neural network (CNN) model for distinguishing COVID-19 and Pneumonia from X-ray images using TensorFlow and Jupyter Notebook.",
+      link: "https://github.com/lecturerkarare/deeplearning",
+      skills: ["Python", "TensorFlow", "NumPy", "Pandas"],
+    },
+    {
+      name: "Arduino Control over Web Server",
+      description:
+        "IoT project that enables remote control of Arduino devices through a web interface for real-time monitoring and automation.",
+      link: "https://github.com/lecturerkarare/arduino-control",
+      skills: ["HTML", "IoT", "Arduino", "Networking"],
+    },
+    {
+      name: "Project Overview – Introduction to NoSQL Databases",
+      description:
+        "A data engineering project that integrates data movement between SQL and NoSQL databases, demonstrating cross-database querying and analytics.",
+      link: "https://github.com/lecturerkarare/Project-Overview-Introduction-to-NoSQL-Databases",
+      skills: ["Jupyter Notebook", "NoSQL", "MongoDB", "Data Migration"],
+    },
+    {
+      name: "IoT Decentralized Application (IoT DApp)",
+      description:
+        "Blockchain-enabled IoT project combining data collection and smart contracts to enhance security and data integrity in IoT systems.",
+      link: "https://github.com/lecturerkarare/iot_dapp",
+      skills: ["IoT", "Blockchain", "Web3.js", "Solidity"],
+    }
+  ],
+  experience: [
+    {
+      company: "Meliora Software Company",
+      title: "Software Developer",
+      dateRange: "2023 - Present",
+      bullets: [
+        "Developing secure and scalable mobile and web solutions using React and Django.",
+        "Collaborated with cross-functional teams to build and deploy software products.",
+        "Implemented authentication and encryption features for client web platforms.",
+      ],
+    }
+  ],
+  education: [
+    {
+      school: "Laikipia University, Nyahururu",
+      degree: "BSc in Computer Science",
+      dateRange: "2019 - 2023",
+      achievements: [
+        "Developed and presented IoT Smart Irrigation System.",
+        "Participated in Huawei and Cisco ICT competitions.",
+        "Completed Hackviser Certified Web Pentester program.",
+      ],
+    }
+  ],
+};
 
-#### Social Links (all optional)
-```typescript
-social: {
-  email: "your-email@example.com",
-  linkedin: "https://linkedin.com/in/yourprofile",
-  twitter: "https://twitter.com/yourprofile", 
-  github: "https://github.com/yourusername",
-}
-```
-
-#### About Section
-```typescript
-aboutMe: "A paragraph describing yourself, your background, interests, and what you're passionate about. This appears in the About section of your portfolio."
-```
-
-#### Skills
-```typescript
-skills: ["JavaScript", "React", "Node.js", "Python", "AWS", "Docker"]
-```
-
-#### Projects
-```typescript
-projects: [
-  {
-    name: "Project Name",
-    description: "Brief description of what the project does and its impact",
-    link: "https://github.com/yourusername/project",
-    skills: ["React", "Node.js", "AWS"], // Technologies used
-  }
-]
-```
-
-#### Experience
-```typescript
-experience: [
-  {
-    company: "Company Name",
-    title: "Your Job Title",
-    dateRange: "Jan 2022 - Present",
-    bullets: [
-      "Led development of microservices architecture serving 1M+ users",
-      "Reduced API response times by 40% through optimization",
-      "Mentored team of 5 junior developers",
-    ],
-  }
-]
-```
-
-#### Education
-```typescript
-education: [
-  {
-    school: "University Name",
-    degree: "Bachelor of Science in Computer Science",
-    dateRange: "2014 - 2018",
-    achievements: [
-      "Graduated Magna Cum Laude with 3.8 GPA",
-      "Dean's List all semesters",
-      "President of Computer Science Club"
-    ]
-  }
-]
 ```
 
 ### Icons
@@ -151,9 +172,10 @@ devportfolio/
 If you'd like to run it locally:
 
 ```
-git clone https://github.com/RyanFitzgerald/devportfolio.git
-cd devportfolio
+git clone https://github.com/lecturerkarare/MoffatPortfolio.git
+cd MoffatPortfolio
 npm install
+npm run dev
 ```
 
 After that, start up the Astro dev server with:
@@ -184,4 +206,4 @@ This project is fully and completely MIT. See LICENSE.md.
 
 ## Questions?
 
-Feel free to reach out on [X (Twitter)](https://x.com/rfitzio) if you have any questions or need help.
+Feel free to reach out on [linkedin](https://linkedin.com/in/moffat-maina-230426225) if you have any questions or need help.

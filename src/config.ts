@@ -1,4 +1,4 @@
-export const config = {
+export const siteConfig = {
   name: "Moffat Gichure Maina",
   title: "Software Developer | Cybersecurity Enthusiast",
   description:

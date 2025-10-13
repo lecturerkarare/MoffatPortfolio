@@ -2,8 +2,10 @@
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 
-// https://astro.build/config
+// ✅ Astro configuration for GitHub Pages + TailwindCSS
 export default defineConfig({
+  site: "https://lecturerkarare.github.io/MoffatPortfolio/", // Your live site URL
+  base: "/MoffatPortfolio/", // Must match your repo name exactly
   vite: {
     plugins: [tailwindcss()],
   },
