@@ -2,39 +2,51 @@
 import { siteConfig } from "../config";
 ---
 
-<section id="about" class="p-8 sm:p-12 md:p-16 lg:p-24 bg-white">
+<section
+  id="about"
+  class="p-8 sm:p-12 md:p-16 lg:p-24 bg-white"
+>
   <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
-    
-    <!-- Left Section (Heading + Profile Picture) -->
+
+    <!-- Left Section: Heading + Profile Picture -->
     <div class="lg:col-span-4 space-y-6 text-center lg:text-left">
-      <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
+      <h2
+        class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900"
+      >
         About Me
       </h2>
+
       <div
         class="w-[75px] h-[5px] mt-2 mx-auto lg:mx-0 rounded-full"
         style={`background-color: ${siteConfig.accentColor}`}
       ></div>
 
-      <!-- Profile Picture -->
+      <!-- ✅ Profile Picture (base-aware path) -->
       <img
-        src="/MoffatProfile.jpg"
-        alt="Moffat Gichure Profile Picture"
-        class="mt-6 w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 object-cover rounded-full shadow-lg mx-auto lg:mx-0 border-4 border-gray-200"
+        src={`${import.meta.env.BASE_URL}MoffatProfile.jpg`}
+        alt="Portrait of Moffat Gichure"
+        loading="lazy"
+        decoding="async"
+        class="mt-6 w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 object-cover rounded-full shadow-lg mx-auto lg:mx-0 border-4 border-gray-200 hover:scale-105 transition-transform duration-300"
       />
     </div>
 
-    <!-- Right Section (Bio + Skills + CV Button) -->
+    <!-- Right Section: Bio + Skills + CV Button -->
     <div class="lg:col-span-8 space-y-8">
-      <p class="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-600">
+      <p
+        class="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-600"
+      >
         {siteConfig.aboutMe}
       </p>
 
-      <!-- Skills -->
+      <!-- Skills Section -->
       <div class="pt-4">
         <div class="flex flex-wrap gap-3">
           {
             siteConfig.skills.map((skill) => (
-              <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-gray-100 text-gray-800 rounded-full text-sm sm:text-base md:text-lg font-medium hover:bg-gray-200 transition-colors duration-200">
+              <span
+                class="px-3 sm:px-4 py-1.5 sm:py-2 bg-gray-100 text-gray-800 rounded-full text-sm sm:text-base md:text-lg font-medium hover:bg-gray-200 transition-colors duration-200"
+              >
                 {skill}
               </span>
             ))
@@ -42,9 +54,9 @@ import { siteConfig } from "../config";
         </div>
       </div>
 
-      <!-- CV Download Button -->
+      <!-- ✅ CV Download Button (base-aware path) -->
       <a
-        href="/Moffat_Gichure_CV.pdf"
+        href={`${import.meta.env.BASE_URL}Moffat_Gichure_CV.pdf`}
         download
         class="inline-block px-6 py-3 bg-blue-600 text-white text-lg font-semibold rounded-xl shadow hover:bg-blue-700 transition-all duration-200 mt-4"
       >
