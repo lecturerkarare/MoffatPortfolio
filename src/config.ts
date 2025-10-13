@@ -1,92 +1,93 @@
-export const siteConfig = {
-  name: "Ryan Fitzgerald",
-  title: "Senior Software Engineer",
-  description: "Portfolio website of Ryan Fitzgerald",
-  accentColor: "#1d4ed8",
+export const config = {
+  name: "Moffat Gichure Maina",
+  title: "Software Developer | Cybersecurity Enthusiast",
+  description:
+    "Innovative web and mobile developer skilled in full-stack engineering, cloud technologies, and cybersecurity. Passionate about building secure and scalable software solutions.",
+  accentColor: "#1d4ed8", // theme color (blue)
   social: {
-    email: "your-email@example.com",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://x.com/rfitzio",
-    github: "https://github.com/RyanFitzgerald",
+    email: "moffatgichuremaina@gmail.com",
+    linkedin: "https://linkedin.com/in/moffat-maina-230426225",
+    twitter: "https://twitter.com/GichureMoffat",
+    github: "https://github.com/lecturerkarare",
   },
   aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+    "I'm a self-driven software developer from Kenya with experience in designing and developing mobile and web applications that address real-world challenges. I’m passionate about cybersecurity and recently earned the Hackviser Certified Web Pentester certification. I value teamwork, continuous learning, and knowledge sharing as tools for both personal and professional growth.",
+  skills: [
+    "JavaScript",
+    "React",
+    "Node.js",
+    "Python",
+    "Django",
+    "Flask",
+    "MySQL",
+    "SQLite",
+    "HTML",
+    "CSS",
+    "Android",
+    "TensorFlow",
+    "Docker",
+    "Cybersecurity",
+    "Git"
+  ],
   projects: [
     {
-      name: "AI Dev Roundup Newsletter",
+      name: "Kijabe",
       description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
-      link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "Java-based application built to streamline organizational data management with modular backend entities. Developed using JDL Studio for schema design.",
+      link: "https://github.com/lecturerkarare/kijabe",
+      skills: ["Java", "Spring", "JDL Studio"],
     },
     {
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
+      name: "DeepLearning - COVID & Pneumonia Detection",
       description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
-      link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "A convolutional neural network (CNN) model for distinguishing COVID-19 and Pneumonia from X-ray images using TensorFlow and Jupyter Notebook.",
+      link: "https://github.com/lecturerkarare/deeplearning",
+      skills: ["Python", "TensorFlow", "NumPy", "Pandas"],
     },
     {
-      name: "ExtensionKit",
+      name: "Arduino Control over Web Server",
       description:
-        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      link: "https://extensionkit.io/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "IoT project that enables remote control of Arduino devices through a web interface for real-time monitoring and automation.",
+      link: "https://github.com/lecturerkarare/arduino-control",
+      skills: ["HTML", "IoT", "Arduino", "Networking"],
     },
+    {
+      name: "Project Overview – Introduction to NoSQL Databases",
+      description:
+        "A data engineering project that integrates data movement between SQL and NoSQL databases, demonstrating cross-database querying and analytics.",
+      link: "https://github.com/lecturerkarare/Project-Overview-Introduction-to-NoSQL-Databases",
+      skills: ["Jupyter Notebook", "NoSQL", "MongoDB", "Data Migration"],
+    },
+    {
+      name: "IoT Decentralized Application (IoT DApp)",
+      description:
+        "Blockchain-enabled IoT project combining data collection and smart contracts to enhance security and data integrity in IoT systems.",
+      link: "https://github.com/lecturerkarare/iot_dapp",
+      skills: ["IoT", "Blockchain", "Web3.js", "Solidity"],
+    }
   ],
   experience: [
     {
-      company: "Tech Company",
-      title: "Senior Software Engineer",
-      dateRange: "Jan 2022 - Present",
+      company: "Meliora Software Company",
+      title: "Software Developer",
+      dateRange: "2023 - Present",
       bullets: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Reduced API response times by 40% through optimization",
-        "Mentored team of 5 junior developers",
+        "Developing secure and scalable mobile and web solutions using React and Django.",
+        "Collaborated with cross-functional teams to build and deploy software products.",
+        "Implemented authentication and encryption features for client web platforms.",
       ],
-    },
-    {
-      company: "Startup Inc",
-      title: "Full Stack Developer",
-      dateRange: "Jun 2020 - Dec 2021",
-      bullets: [
-        "Built and launched MVP product from scratch using React and Node.js",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Collaborated with product team to define technical requirements",
-      ],
-    },
-    {
-      company: "Digital Agency",
-      title: "Frontend Developer",
-      dateRange: "Aug 2018 - May 2020",
-      bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
-      ],
-    },
+    }
   ],
   education: [
     {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2014 - 2018",
+      school: "Laikipia University, Nyahururu",
+      degree: "BSc in Computer Science",
+      dateRange: "2019 - 2023",
       achievements: [
-        "Graduated Magna Cum Laude with 3.8 GPA",
-        "Dean's List all semesters",
-        "President of Computer Science Club",
+        "Developed and presented IoT Smart Irrigation System.",
+        "Participated in Huawei and Cisco ICT competitions.",
+        "Completed Hackviser Certified Web Pentester program.",
       ],
-    },
-    {
-      school: "Online Platform",
-      degree: "Full Stack Development Certificate",
-      dateRange: "2019",
-      achievements: [
-        "Completed 500+ hours of coursework",
-        "Built 10+ portfolio projects",
-        "Specialized in React and Node.js",
-      ],
-    },
+    }
   ],
 };
