@@ -28,6 +28,8 @@ export const siteConfig = {
     "Docker",
     "Cybersecurity",
     "Git"
+    "JAVA"
+    "Angular"
   ],
   projects: [
     {
@@ -70,9 +72,9 @@ export const siteConfig = {
     {
       company: "Meliora Software Company",
       title: "Software Developer",
-      dateRange: "2023 - Present",
+      dateRange: "May, 2023 - Dec,2023",
       bullets: [
-        "Developing secure and scalable mobile and web solutions using React and Django.",
+        "Developing secure and scalable mobile and web solutions using Java. Angular, React and Mysql Database.",
         "Collaborated with cross-functional teams to build and deploy software products.",
         "Implemented authentication and encryption features for client web platforms.",
       ],
