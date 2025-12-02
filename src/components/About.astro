@@ -21,7 +21,7 @@ import { siteConfig } from "../config";
         style={`background-color: ${siteConfig.accentColor}`}
       ></div>
 
-      <!-- ✅ Profile Picture (base-aware path) -->
+      <!-- Profile Picture -->
       <img
         src={`${import.meta.env.BASE_URL}MoffatProfile.jpg`}
         alt="Portrait of Moffat Gichure"
@@ -33,19 +33,20 @@ import { siteConfig } from "../config";
 
     <!-- Right Section: Bio + Skills + CV Button -->
     <div class="lg:col-span-8 space-y-8">
-      <p
-        class="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-600"
-      >
+
+      <p class="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-600">
         {siteConfig.aboutMe}
       </p>
 
       <!-- Skills Section -->
       <div class="pt-4">
+        <h3 class="text-xl font-semibold mb-3 text-gray-900">Skills & Expertise</h3>
         <div class="flex flex-wrap gap-3">
           {
             siteConfig.skills.map((skill) => (
               <span
-                class="px-3 sm:px-4 py-1.5 sm:py-2 bg-gray-100 text-gray-800 rounded-full text-sm sm:text-base md:text-lg font-medium hover:bg-gray-200 transition-colors duration-200"
+                class="px-3 sm:px-4 py-1.5 sm:py-2 bg-gray-100 text-gray-800 rounded-full 
+                text-sm sm:text-base md:text-lg font-medium hover:bg-gray-200 transition-colors duration-200"
               >
                 {skill}
               </span>
@@ -54,11 +55,12 @@ import { siteConfig } from "../config";
         </div>
       </div>
 
-      <!-- ✅ CV Download Button (base-aware path) -->
+      <!-- CV Download Button -->
       <a
         href={`${import.meta.env.BASE_URL}MOFFAT GICHURE MAINA CV (1).pdf`}
         download
-        class="inline-block px-6 py-3 bg-blue-600 text-white text-lg font-semibold rounded-xl shadow hover:bg-blue-700 transition-all duration-200 mt-4"
+        class="inline-block px-6 py-3 bg-blue-600 text-white text-lg font-semibold rounded-xl 
+        shadow hover:bg-blue-700 transition-all duration-200 mt-4"
       >
         📄 Download My CV
       </a>
