@@ -1,95 +1,177 @@
 export const siteConfig = {
   name: "Moffat Gichure Maina",
-  title: "Software Developer | Cybersecurity Enthusiast",
+  title: "Cybersecurity Specialist | DevSecOps Engineer | Full-Stack Developer",
   description:
-    "Innovative web and mobile developer skilled in full-stack engineering, cloud technologies, and cybersecurity. Passionate about building secure and scalable software solutions.",
-  accentColor: "#1d4ed8", // theme color (blue)
+    "Cybersecurity specialist, DevSecOps engineer, and full-stack software developer skilled in secure system design, penetration testing, cloud engineering, modern web development, and scalable backend solutions.",
+
+  accentColor: "#1d4ed8",
+
   social: {
     email: "moffatgichuremaina@gmail.com",
     linkedin: "https://linkedin.com/in/moffat-maina-230426225",
     twitter: "https://twitter.com/GichureMoffat",
     github: "https://github.com/lecturerkarare",
   },
+
   aboutMe:
-    "I'm a self-driven software developer from Kenya with experience in designing and developing mobile and web applications that address real-world challenges. I’m passionate about cybersecurity and recently earned the Hackviser Certified Web Pentester certification. I value teamwork, continuous learning, and knowledge sharing as tools for both personal and professional growth.",
+    "I am a results-driven Cybersecurity Specialist, DevSecOps Engineer, and Full-Stack Developer from Kenya with experience in penetration testing, secure backend development, cloud deployments, and enterprise IT systems. I build secure, scalable, and efficient solutions using modern technologies—ranging from mobile and web development to cloud-based microservices. I’m passionate about system security, automation, and modern DevSecOps practices.",
+
   skills: [
-    "JavaScript",
-    "React",
-    "Node.js",
+    // Security & DevOps
+    "Cybersecurity",
+    "Penetration Testing",
+    "API Security",
+    "DevSecOps",
+    "CI/CD",
+    "Docker",
+    "Linux",
+    "GitHub Actions",
+    "AWS",
+    "Render & Railway Deployments",
+
+    // Programming
     "Python",
+    "Java",
+    "JavaScript",
+    "TypeScript",
+    "Kotlin",
+
+    // Back-end
+    "Node.js",
     "Django",
     "Flask",
-    "MySQL",
-    "SQLite",
+    "Express.js",
+
+    // Front-end
+    "React",
+    "Angular",
     "HTML",
     "CSS",
-    "Android",
-    "TensorFlow",
-    "Docker",
-    "Cybersecurity",
-    "Git"
-    "JAVA"
-    "Angular"
+
+    // Databases
+    "MySQL",
+    "MongoDB",
+    "SQLite",
+
+    // Mobile
+    "Android Development",
+
+    // Others
+    "IoT",
+    "Networking",
+    "TensorFlow"
   ],
+
   projects: [
     {
-      name: "Kijabe",
+      name: "Bulk WhatsApp Web Sender",
       description:
-        "Java-based application built to streamline organizational data management with modular backend entities. Developed using JDL Studio for schema design.",
+        "A Node.js + Puppeteer automation tool enabling bulk messaging through WhatsApp Web with secure session handling.",
+      link: "https://github.com/lecturerkarare/whatsapp-sender",
+      skills: ["JavaScript", "Puppeteer", "Automation"],
+    },
+    {
+      name: "ImageCipher – Mobile Encryption App",
+      description:
+        "A Kotlin-based mobile app that encrypts and decrypts images locally using custom cryptographic algorithms.",
+      link: "https://github.com/lecturerkarare/ImageCipher",
+      skills: ["Kotlin", "Android", "Encryption"],
+    },
+    {
+      name: "AWS Serverless App",
+      description:
+        "A serverless application built with AWS CDK, S3, Lambda, and API Gateway to demonstrate cloud-native secure backend engineering.",
+      link: "https://github.com/lecturerkarare/aws-serverless",
+      skills: ["AWS", "Lambda", "CDK", "S3"],
+    },
+    {
+      name: "Kijabe Alumni Association System",
+      description:
+        "A Node.js + MySQL web system for managing alumni members, communication, and records.",
       link: "https://github.com/lecturerkarare/kijabe",
-      skills: ["Java", "Spring", "JDL Studio"],
+      skills: ["Node.js", "MySQL", "Express.js"],
     },
     {
-      name: "DeepLearning - COVID & Pneumonia Detection",
+      name: "IoT Control System",
       description:
-        "A convolutional neural network (CNN) model for distinguishing COVID-19 and Pneumonia from X-ray images using TensorFlow and Jupyter Notebook.",
-      link: "https://github.com/lecturerkarare/deeplearning",
-      skills: ["Python", "TensorFlow", "NumPy", "Pandas"],
-    },
-    {
-      name: "Arduino Control over Web Server",
-      description:
-        "IoT project that enables remote control of Arduino devices through a web interface for real-time monitoring and automation.",
+        "Arduino-based IoT automation platform remotely controlled via a secure web dashboard.",
       link: "https://github.com/lecturerkarare/arduino-control",
-      skills: ["HTML", "IoT", "Arduino", "Networking"],
-    },
-    {
-      name: "Project Overview – Introduction to NoSQL Databases",
-      description:
-        "A data engineering project that integrates data movement between SQL and NoSQL databases, demonstrating cross-database querying and analytics.",
-      link: "https://github.com/lecturerkarare/Project-Overview-Introduction-to-NoSQL-Databases",
-      skills: ["Jupyter Notebook", "NoSQL", "MongoDB", "Data Migration"],
-    },
-    {
-      name: "IoT Decentralized Application (IoT DApp)",
-      description:
-        "Blockchain-enabled IoT project combining data collection and smart contracts to enhance security and data integrity in IoT systems.",
-      link: "https://github.com/lecturerkarare/iot_dapp",
-      skills: ["IoT", "Blockchain", "Web3.js", "Solidity"],
+      skills: ["IoT", "Arduino", "Networking"],
     }
   ],
+
   experience: [
     {
-      company: "Meliora Software Company",
-      title: "Software Developer",
-      dateRange: "May, 2023 - Dec,2023",
+      company: "Freelance — Remote (Upwork & Fiverr)",
+      title: "Cybersecurity Specialist & Full-Stack Developer",
+      dateRange: "2020 – Present",
       bullets: [
-        "Developing secure and scalable mobile and web solutions using Java. Angular, React and Mysql Database.",
-        "Collaborated with cross-functional teams to build and deploy software products.",
-        "Implemented authentication and encryption features for client web platforms.",
+        "Performed mobile and API penetration testing, vulnerability assessments, and security consultations.",
+        "Built secure full-stack web systems and mobile applications for international clients.",
+        "Configured routers, firewalls, VPNs, and enterprise network security controls.",
+        "Integrated M-Pesa, Stripe, and PayPal payment systems for SMEs.",
+        "Developed cloud-based deployments using Render and Railway.app.",
+      ],
+    },
+    {
+      company: "US-Based Cloud Security Firm",
+      title: "DevSecOps Engineer (Remote Contract)",
+      dateRange: "May 2024 – Sep 2024",
+      bullets: [
+        "Designed CI/CD pipelines with GitHub Actions incorporating SAST and DAST security gates.",
+        "Deployed microservices using Docker, Railway, and AWS serverless technologies.",
+        "Implemented IAM workflows using Bron IAM and Privacera.",
+        "Developed Infrastructure-as-Code with AWS CDK.",
+      ],
+    },
+    {
+      company: "Liberty Life – Juja",
+      title: "IT Support Specialist",
+      dateRange: "Apr 2024 – Jan 2025",
+      bullets: [
+        "Provided enterprise IT support for networks, hardware, secure email, and cloud backups.",
+        "Implemented firewall rules, endpoint controls, and M-Pesa API billing systems.",
+        "Offered technical documentation and end-user training.",
+      ],
+    },
+    {
+      company: "Palo Alto Networks (Cybersecurity Research)",
+      title: "Security Research Contributor",
+      dateRange: "May 2024 – Aug 2024",
+      bullets: [
+        "Analyzed threat intelligence feeds, malware samples, and IOCs.",
+        "Performed static and dynamic analysis to support detection rule development.",
+        "Automated research tasks using Python scripting.",
+      ],
+    },
+    {
+      company: "Meliora Software Company",
+      title: "Software Developer Intern",
+      dateRange: "May 2023 – Dec 2023",
+      bullets: [
+        "Developed full-stack applications using Java, Spring, React, Angular, and MySQL.",
+        "Integrated M-Pesa API and authentication modules for secure web platforms.",
+        "Performed deployment support and database optimization.",
       ],
     }
   ],
+
   education: [
     {
       school: "Laikipia University, Nyahururu",
       degree: "BSc in Computer Science",
-      dateRange: "2019 - 2023",
+      dateRange: "2019 – 2023",
       achievements: [
-        "Developed and presented IoT Smart Irrigation System.",
-        "Participated in Huawei and Cisco ICT competitions.",
-        "Completed Hackviser Certified Web Pentester program.",
+        "Designed and presented IoT smart systems.",
+        "Participated in Cisco and Huawei ICT competitions.",
+        "Performed security research and cloud computing projects.",
       ],
+    },
+    {
+      school: "Mukurwe Wa Nyagathanga Secondary School",
+      degree: "KCSE – B (Minus)",
+      dateRange: "2015 – 2018",
+      achievements: ["ICT Club Coordinator", "Science Congress Competitor"],
     }
   ],
 };
